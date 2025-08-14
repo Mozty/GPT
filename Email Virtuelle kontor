@@ -1,0 +1,316 @@
+<!doctype html>
+<!--
+  E-POSTMAL: Virtuelle kontorpakker – RSE Entreprenør AS
+  ------------------------------------------------------
+  Viktig om e-post-HTML:
+  - Vi bruker TABELLER (<table>) og INLINE-STILER for best støtte i Outlook, Gmail, Apple Mail m.fl.
+  - Eksterne CSS-filer og avanserte layout-teknikker (flex/grid) støttes dårlig i enkelte klienter.
+  - Gradienteffekter og blur kan nedtones i enkelte klienter; innholdet er likevel lesbart.
+  - Bilder sendes best som CID-vedlegg (Content-ID) og refereres med src="cid:...".
+  - For like høye priskort (Basis/Pluss) bruker vi <td height="..." valign="middle"> + sentrert innhold.
+-->
+<html lang="no" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtuelle kontorpakker – RSE Entreprenør AS</title>
+  </head>
+
+  <!--
+    KROPPSSTILER
+    - Bakgrunnen har en kombinasjon av radiale + lineære gradienter for dybde.
+    - -webkit/-ms text-size-adjust hindrer iOS/Outlook i å skalere fontene.
+  -->
+  <body style="margin:0; padding:0; background-color:#0f1215; background-image:radial-gradient(1200px 600px at 50% -10%, #1e7e34 0%, rgba(30,126,52,0.12) 45%, rgba(15,18,21,0.95) 100%), linear-gradient(180deg,#0f1215,#171b20); -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
+
+    <!--
+      PREHEADER (skjult)
+      - Vises i innboksens forhåndstekst (ikke i selve e-posten).
+      - display:none + 1px font skjuler den i e-postens brødtekst.
+    -->
+    <div style="display:none; font-size:1px; color:#0f1215; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden;">
+      Virtuelt kontor hos RSE: profesjonell adresse, posthåndtering og fleksibel tilgang til møterom og kontor – når du trenger det.
+    </div>
+
+    <!-- WRAPPER: Full bredde for bakgrunn + sentrert container -->
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+        <!--
+          YTRE PADDING
+          - Litt mer luft rundt hele e-posten for «clean» følelse.
+        -->
+        <td align="center" style="padding:44px 14px;">
+
+          <!--
+            CONTAINER (maks 700px)
+            - Glass-effekt bakgrunn (rgba + blur) for moderne uttrykk.
+            - box-shadow for dybde; border-radius for myke kanter.
+          -->
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:700px; background:rgba(255,255,255,0.07); border-radius:20px; box-shadow:0 24px 70px rgba(0,0,0,0.55); overflow:hidden; backdrop-filter:blur(16px);">
+
+            <!-- HEADER / HERO -->
+            <tr>
+              <!--
+                Conic-gradient for energisk toppstripe. Padding økt for mer luft.
+              -->
+              <td style="background: conic-gradient(from 210deg at 80% 20%, rgba(38,168,75,1) 0deg, rgba(31,138,60,1) 110deg, rgba(25,102,45,1) 200deg, rgba(38,168,75,1) 360deg); padding:22px 24px 26px;">
+                <!-- Logo + label (bruk CID for robust innlasting i e-postklienter) -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <td align="left">
+                      <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                          <td style="vertical-align:middle; padding-right:10px;">
+                            <img src="https://images.eniro.com/capax/67291fa4981776dac230d7eb?name=default&op=ORIG
+" alt="RSE Entreprenør AS" width="120" style="display:block; border:0; outline:none; text-decoration:none; height:auto; max-width:120px;">
+                          </td>
+                          <td style="vertical-align:middle;">
+                            <!-- Lite chip-merke som identitet; blur kan ignoreres i enkelte klienter -->
+                            <span style="display:inline-block; background:rgba(255,255,255,0.18); color:#ffffff; font-weight:800; font-family:Arial, Helvetica, sans-serif; padding:8px 12px; border-radius:10px; font-size:13px; backdrop-filter:blur(8px);">RSE Entreprenør AS</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" style="padding-top:14px;">
+                      <div style="font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:30px; line-height:1.25; font-weight:800; text-shadow:0 2px 8px rgba(0,0,0,0.35);">Virtuelle kontorpakker – Rosenborgveien 5, Fredrikstad</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" style="padding-top:14px;">
+                      <!-- Intro-avsnitt med økt linjehøyde for lesbarhet -->
+                      <div style="font-family:Arial, Helvetica, sans-serif; color:#e9f9ee; font-size:15px; line-height:1.8;">
+                        <strong>Hva er et virtuelt kontor?</strong> Du får en <em>offisiell forretningsadresse</em> og valgfrie tjenester som postmottak, møterom og fleksibel kontorplass – uten å binde deg til fast kontorleie. Løsningen passer konsulenter, gründere og bedrifter som vil fremstå profesjonelt og samtidig holde kostnadene nede.
+                      </div>
+                      <div style="font-family:Arial, Helvetica, sans-serif; color:#d6f2de; font-size:15px; line-height:1.8; padding-top:10px;">
+                        <strong>Hvorfor lønner det seg?</strong> Lavere faste kostnader, bedre skalerbarhet, profesjonell profil i Brønnøysund/Nettsider/Faktura, og tilgang til fasiliteter <em>kun når du trenger dem</em>.
+                      </div>
+                      <!-- Primær CTA. Bruk mailto for friksjonsfri handling i e-post. -->
+                      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;">
+                        <tr>
+                          <td align="center" style="border-radius:12px; background:linear-gradient(135deg, rgba(255,255,255,0.28), rgba(255,255,255,0.14)); box-shadow:0 10px 24px rgba(0,0,0,0.25);">
+                            <a href="mailto:andreas@rsedvardsen.no?subject=Interesse%20for%20virtuelt%20kontor" style="display:inline-block; padding:14px 22px; color:#0f3b20; font-family:Arial, Helvetica, sans-serif; font-weight:900; text-decoration:none; font-size:16px; letter-spacing:0.2px; text-shadow:0 1px 0 rgba(255,255,255,0.35);">Be om et uforpliktende tilbud</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- DEKORATIV BANNER / HERO-PLASSHOLDER -->
+            <tr>
+              <td style="padding:0;">
+                <!-- Lys gradientstripe som bryter opp uten å lage tunge «bokser» -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(90deg, rgba(76,201,240,0.10), rgba(46,196,182,0.10), rgba(40,168,95,0.10));">
+                  <tr>
+                    <td align="center" style="padding:16px;">
+                      <!-- Tips: bytt span til <img src="cid:hero.jpg"> ved utsendelse om ønskelig -->
+                      <span style="display:inline-block; padding:8px 12px; color:#cfe7ff; font-family:Arial, Helvetica, sans-serif; font-size:12px; border:1px dashed rgba(255,255,255,0.25); border-radius:10px;">(Valgfritt hero‑bilde kan settes her ved utsendelse)</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- HVORFOR RSE (minimal tekst, ingen kort-bokser) -->
+            <tr>
+              <td style="padding:26px 24px 0 24px;">
+                <div style="font-family:Arial, Helvetica, sans-serif; color:#eaf6ee; font-size:18px; font-weight:800; padding-bottom:8px;">Hvorfor velge virtuelt kontor hos RSE?</div>
+                <div style="font-family:Arial, Helvetica, sans-serif; color:#e6eaea; font-size:15px; line-height:1.9;">
+                  Profesjonell profil i Brønnøysund, på nettsider og fakturaer. Postmottak og varsling når forsendelser ankommer. Tilgang til møterom og privat kontorplass etter behov. Fleksibel oppskalering – legg til tjenester når du trenger dem. Sentral beliggenhet i Gamle Fredrikstad.
+                </div>
+              </td>
+            </tr>
+
+            <!-- PAKKETITTEL -->
+            <tr>
+              <td style="padding:34px 24px 12px 24px;">
+                <div style="font-family:Arial, Helvetica, sans-serif; color:#f3fbf6; font-size:20px; font-weight:800;">Velg pakken som passer deg</div>
+                <div style="font-family:Arial, Helvetica, sans-serif; color:#cfe7d8; font-size:14px; line-height:1.8; padding-top:4px;">Alle priser eks. mva. Ingen etableringskostnader.</div>
+              </td>
+            </tr>
+
+            <!-- PRIS-KOLONNER (to like brede) -->
+            <tr>
+              <td style="padding:0 22px 0 22px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                  <tr>
+                    <!-- BASIS-KORT -->
+                    <td width="50%" style="padding:0 8px 18px 0;" valign="top" align="center">
+                      <!--
+                        Kortstil (nøytral): svak gradient + tynn border.
+                        Høyde likt med Pluss (se td height) + midtstilling.
+                      -->
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04)); border-radius:16px; border:1px solid rgba(255,255,255,0.18); box-shadow:0 14px 24px rgba(0,0,0,0.28); text-align:center;">
+                        <tr>
+                          <!--
+                            LIK HØYDE + VERTIKAL SENTRERING
+                            - height="372" sikrer at Basis og Pluss er like høye i de fleste klienter.
+                            - valign="middle" + align="center" holder innholdet i midten.
+                            - Padding inne i kortet er flyttet til indre wrapper for at høyden skal være presis.
+                          -->
+                          <td height="372" valign="middle" align="center" style="padding:0 18px;">
+                            <!-- Indre wrapper: kontrollerer luft rundt innholdet -->
+                            <div style="padding:4px 0 0;">
+                              <div style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:800; color:#eaf9f0; background:linear-gradient(90deg, rgba(38,168,75,0.28), rgba(46,196,182,0.28)); display:inline-block; padding:4px 10px; border-radius:999px; letter-spacing:0.5px;">🏠 BASIS • FORRETNINGSADRESSE</div>
+                              <div style="font-family:Arial, Helvetica, sans-serif; font-size:26px; font-weight:800; color:#ffffff; padding-top:12px; text-shadow:0 2px 6px rgba(0,0,0,0.35);">kr 590/mnd <span style="font-size:13px; font-weight:600; color:#c5d4cb;">(eks. mva)</span></div>
+                              <!--
+                                list-style-position:inside gir pen sentrering i e-postklienter.
+                                Marginer økt for mer luft.
+                              -->
+                              <ul style="font-family:Arial, Helvetica, sans-serif; margin:16px 0 0 0; padding:0; color:#e6eaea; font-size:15px; line-height:1.9; list-style-position:inside; text-align:center;">
+                                <li>Offisiell forretningsadresse (Brønnøysund/Nettside/Faktura)</li>
+                                <li>Book møterom ved behov (100 kr/time)</li>
+                                <li>1 velkomstmøte med omvisning</li>
+                              </ul>
+                              <!-- Primær knapp -->
+                              <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;">
+                                <tr>
+                                  <td align="center" style="border-radius:10px; background:linear-gradient(90deg,#2CC05A,#26A84B); box-shadow:0 10px 20px rgba(38,168,75,0.35);">
+                                    <a href="mailto:andreas@rsedvardsen.no?subject=Jeg%20vil%20bestille%20Basis" style="display:inline-block; padding:14px 20px; color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-weight:800; text-decoration:none; font-size:15px; border-radius:10px;">Velg Basis</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+
+                    <!-- PLUSS-KORT -->
+                    <td width="50%" style="padding:0 0 18px 8px;" valign="top" align="center">
+                      <!--
+                        Pluss har svakt turkis stikk for differensiering, men samme høyde.
+                      -->
+                      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(180deg, rgba(46,196,182,0.10), rgba(46,196,182,0.04)); border-radius:16px; border:1px solid rgba(255,255,255,0.18); box-shadow:0 14px 24px rgba(0,0,0,0.28); text-align:center;">
+                        <tr>
+                          <td height="372" valign="middle" align="center" style="padding:0 18px;">
+                            <div style="padding:4px 0 0;">
+                              <div style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:800; color:#eaf9f0; background:linear-gradient(90deg, rgba(38,168,75,0.28), rgba(46,196,182,0.28)); display:inline-block; padding:4px 10px; border-radius:999px;">📦 PLUSS • ADRESSE + POST</div>
+                              <div style="font-family:Arial, Helvetica, sans-serif; font-size:26px; font-weight:800; color:#ffffff; padding-top:12px; text-shadow:0 2px 6px rgba(0,0,0,0.35);">kr 990/mnd <span style="font-size:13px; font-weight:600; color:#d5e5dc;">(eks. mva)</span></div>
+                              <ul style="font-family:Arial, Helvetica, sans-serif; margin:16px 0 0 0; padding:0; color:#f0f6f2; font-size:15px; line-height:1.9; list-style-position:inside; text-align:center;">
+                                <li>Alt fra <strong>Basis</strong></li>
+                                <li>Posthåndtering: vi mottar og varsler når post kommer</li>
+                                <li>Leie privat kontorplass ved behov (290 kr/dag)</li>
+                                <li>Prioritert booking av møterom</li>
+                              </ul>
+                              <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;">
+                                <tr>
+                                  <td align="center" style="border-radius:10px; background:linear-gradient(90deg,#2CC05A,#26A84B); box-shadow:0 10px 20px rgba(38,168,75,0.35);">
+                                    <a href="mailto:andreas@rsedvardsen.no?subject=Jeg%20vil%20bestille%20Pluss" style="display:inline-block; padding:14px 20px; color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-weight:800; text-decoration:none; font-size:15px; border-radius:10px;">Velg Pluss</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- PREMIUM-KORT (kan skille seg ut mer – bevisst) -->
+            <tr>
+              <td style="padding:0 22px 8px 22px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(135deg, rgba(38,168,75,0.12), rgba(46,196,182,0.12), rgba(76,201,240,0.12)); border-radius:18px; padding:0; border:1px solid rgba(76,201,240,0.35); box-shadow:0 18px 32px rgba(76,201,240,0.18);">
+                  <tr>
+                    <td style="padding:26px 22px;">
+                      <div style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:800; color:#eaf9f0; background:linear-gradient(90deg, rgba(38,168,75,0.28), rgba(76,201,240,0.38)); display:inline-block; padding:6px 12px; border-radius:999px;">🚀 PREMIUM • FULL FLEKSIBILITET</div>
+                      <div style="font-family:Arial, Helvetica, sans-serif; font-size:26px; font-weight:800; color:#ffffff; padding-top:10px; text-shadow:0 2px 6px rgba(0,0,0,0.35);">kr 1 590/mnd <span style="font-size:13px; font-weight:600; color:#c5d4cb;">(eks. mva)</span></div>
+                      <ul style="font-family:Arial, Helvetica, sans-serif; margin:16px 0 0 18px; padding:0; color:#e6eaea; font-size:15px; line-height:1.9;">
+                        <li>Alt fra <strong>Pluss</strong></li>
+                        <li>Gratis bruk av møterom (inntil 8 t/mnd)</li>
+                        <li>Gratis tilgang til privat kontorplass (inntil 5 dager/mnd)</li>
+                        <li>Personlig servicekontakt</li>
+                      </ul>
+                      <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;">
+                        <tr>
+                          <td align="center" style="border-radius:10px; background:linear-gradient(90deg,#3DD1F4,#2CC05A,#26A84B); box-shadow:0 14px 26px rgba(76,201,240,0.30);">
+                            <a href="mailto:andreas@rsedvardsen.no?subject=Jeg%20vil%20bestille%20Premium" style="display:inline-block; padding:14px 20px; color:#0a2a17; font-family:Arial, Helvetica, sans-serif; font-weight:900; text-decoration:none; font-size:15px; border-radius:10px; text-shadow:0 1px 0 rgba(255,255,255,0.45);">Velg Premium</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- MÅLGRUPPE (minimal seksjon uten ramme-boks) -->
+            <tr>
+              <td style="padding:22px 24px 0 24px;">
+                <div style="font-family:Arial, Helvetica, sans-serif; color:#eaf6ee; font-size:18px; font-weight:800; padding-bottom:8px;">Passer spesielt godt for</div>
+                <div style="font-family:Arial, Helvetica, sans-serif; color:#e6eaea; font-size:15px; line-height:1.9;">
+                  Konsulenter og frilansere som jobber hybrid eller remote. Oppstartsbedrifter som vil skalere uten faste lokaler. Etablerte SMB-er som trenger proff adresse og fleksible fasiliteter.
+                </div>
+              </td>
+            </tr>
+
+            <!-- FAQ (kort og uten tunge bokser) -->
+            <tr>
+              <td style="padding:24px 24px 0 24px;">
+                <div style="font-family:Arial, Helvetica, sans-serif; color:#eaf6ee; font-size:18px; font-weight:800; padding-bottom:8px;">Ofte stilte spørsmål (kort)</div>
+                <div style="font-family:Arial, Helvetica, sans-serif; color:#e6eaea; font-size:15px; line-height:1.9;">
+                  <strong>Får jeg egen postkasse?</strong> – Vi mottar og varsler deg; utlevering etter avtale.<br>
+                  <strong>Kan jeg bruke adressen offentlig?</strong> – Ja, i Brønnøysund, på nettsider og i fakturaer.<br>
+                  <strong>Kan jeg oppgradere senere?</strong> – Når som helst.
+                </div>
+              </td>
+            </tr>
+
+            <!-- VILKÅR (kortfattet, uten dekorative rammer for «clean» look) -->
+            <tr>
+              <td style="padding:24px 24px 28px 24px;">
+                <div style="font-family:Arial, Helvetica, sans-serif; color:#cfe7d8; font-size:16px; font-weight:800; padding-bottom:8px;">Kontraktsvilkår</div>
+                <div style="font-family:Arial, Helvetica, sans-serif; color:#dae6df; font-size:14px; line-height:1.9;">
+                  Avtaleperiode: Minimum 12 måneder. Deretter løpende med én måneds oppsigelsestid. Betaling: Forskuddsvis per måned (faktura elektronisk). Oppsigelse: Ved brudd på minimumsperioden påløper et gebyr tilsvarende én måneds leie. Endringer: Prisjusteringer varsles minimum 30 dager i forkant. Ansvar: RSE fraskriver seg ansvar for tap/skade med mindre dette skyldes grov uaktsomhet.
+                </div>
+              </td>
+            </tr>
+
+            <!-- AVSLUTTENDE CTA -->
+            <tr>
+              <td style="padding:0 24px 22px 24px;">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tr>
+                    <td align="center" style="border-radius:14px; background:linear-gradient(90deg,#2CC05A,#26A84B); box-shadow:0 16px 34px rgba(38,168,75,0.35);">
+                      <a href="mailto:andreas@rsedvardsen.no?subject=Interesse%20for%20virtuelt%20kontor" style="display:inline-block; padding:16px 26px; color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-weight:800; text-decoration:none; font-size:17px; border-radius:14px;">Ta kontakt – få tilbud</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!-- FOOTER (lett ramme for avsenderinfo) -->
+            <tr>
+              <td style="padding:0 24px 28px 24px;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.16); border-radius:12px; backdrop-filter:blur(6px);">
+                  <tr>
+                    <td style="padding:18px;">
+                      <div style="font-family:Arial, Helvetica, sans-serif; color:#f0f6f2; font-size:15px; font-weight:800; padding-bottom:6px;">Kontakt oss</div>
+                      <div style="font-family:Arial, Helvetica, sans-serif; color:#d9e7df; font-size:14px; line-height:1.9;">
+                        RSE Entreprenør AS<br>
+                        Rosenborgveien 5, 1630 Gamle Fredrikstad<br>
+                        E‑post: <a href="mailto:andreas@rsedvardsen.no" style="color:#9be3b3; text-decoration:none;">andreas@rsedvardsen.no</a><br>
+                        Telefon: <a href="tel:+4741390641" style="color:#9be3b3; text-decoration:none;">+47 413 90 641</a> (man–fre 08–16)<br>
+                        Nettside: <a href="https://rsedvardsen.no" style="color:#9be3b3; text-decoration:none;">rsedvardsen.no</a>
+                      </div>
+                      <div style="font-family:Arial, Helvetica, sans-serif; color:#9aa6a0; font-size:12px; padding-top:10px;">© RSE Entreprenør AS • Rosenborgveien 5, 1630 Gamle Fredrikstad</div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+          </table>
+          <!-- End Container -->
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
